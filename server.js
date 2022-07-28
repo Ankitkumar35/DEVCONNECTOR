@@ -10,9 +10,9 @@ const app = express();
 
 connectDB();
 
-app.use(express.json({ extended: false }));
+app.use(express.json);
 
-app.get('/', (req, res) => res.send('API Running'));
+// app.get('/', (req, res) => res.send('API Running'));
 
 //DEFINE ROUTES
 
@@ -23,7 +23,7 @@ app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));
 
 if (process.env.NODE_ENV === 'production') {
-    // Set static folder
+    
     app.use(express.static('client/build'));
   
     app.get('*', (req, res) => {
