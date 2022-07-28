@@ -1,5 +1,9 @@
 {
     "mongoURI": "mongodb+srv://ankit123:ankit123@devconnector.btgqxcm.mongodb.net/?retryWrites=true"
 ,
-    "jwtSecret":"mysecrettoken"
+    "jwtSecret":"mysecrettoken",
+
+    "githubSecret": "34b366d7fa577952e2817ff29b2d11c90b26a653",
+
+    "githubClientID": "6b8b4373f659e508b3c2"
 }
